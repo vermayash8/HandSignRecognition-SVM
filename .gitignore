@@ -1,0 +1,8 @@
+# python bytecode files.
+*.pyc
+
+# Pycharm folders.
+.idea
+
+# Generated dataset folders.
+dataset
