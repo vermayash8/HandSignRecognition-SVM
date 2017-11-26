@@ -41,6 +41,7 @@ def makePredictions():
         ret, frame = camera.read()
         roi, frame = imageOps.drawAndGetRoi(frame)
         if predictionStarted:
+            roi = cv2.resize(roi, (100, 100))
             prediction = mlUtils.predictGesture(roi)
             cv2.putText(frame, prediction, (450, 80), cv2.FONT_HERSHEY_PLAIN, 3, (0, 0, 255), thickness= 3)
             if gameControl:
