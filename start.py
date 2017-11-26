@@ -6,7 +6,7 @@ import mlUtils
 
 def main():
     print "\n== == == == Hand sign recognizer == == == == "
-    print "1. Generate dataset.\n2. Train model from generated dataset.\n3. Make predictions."
+    print "1. Generate dataset.\n2. Train model from generated dataset.\n3. Make predictions.\n4. TestAccuracy"
     choice = input("Choice: ")
     if choice == 1:
         print "Chose 1"
@@ -14,6 +14,8 @@ def main():
         trainModel()
     elif choice == 3:
         makePredictions()
+    elif choice == 4:
+        mlUtils.testAccuracy()
     else:
         print "Invalid choice"
     main()

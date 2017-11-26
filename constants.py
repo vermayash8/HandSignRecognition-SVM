@@ -12,3 +12,4 @@ binaryMask_minThreshold = 70
 # Dataset constants
 path_data_storage = "datasets/"
 dataset_folder_name = "dataset100/"
+test_folder_name = "testPortion/"
