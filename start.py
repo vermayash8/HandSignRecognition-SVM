@@ -11,7 +11,7 @@ def main():
     if choice == 1:
         print "Chose 1"
     elif choice == 2:
-        print "Chose 2"
+        trainModel()
     elif choice == 3:
         makePredictions()
     else:
@@ -51,7 +51,7 @@ def makePredictions():
 
         cv2.imshow("CapturingWindow", frame)
 
-        keyPressed = cv2.waitKey(66) & 0XFF
+        keyPressed = cv2.waitKey(100) & 0XFF
         if keyPressed == ord('q'):
             break
         elif keyPressed == ord('s'):
